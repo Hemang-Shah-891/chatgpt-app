@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Fetch 10 public Meta profiles
 app.get("/api/meta-profiles", async (req, res) => {
   try {
     const response = await axios.get(
